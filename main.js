@@ -6,15 +6,20 @@
 // change the count-el to reflect the new count 
 
 let countEl = document.getElementById("count-el")
-let count = 0;
-
-console.log(countEl)
-
-
+let count = 0
 
 function increment(){
     // for testing ,, console.log(" clicked")
-    count = count +1 
-    countEl.innerText = count 
+    count = count + 1 
+   countEl.innerText = count 
     
 }
+
+function save() {
+    console.log(count)
+}
+
+let name = "iheb"
+let greeting = "hi,my name is"
+let MyGreeting = name + "" + greeting 
+console.log(MyGreeting)
