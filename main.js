@@ -4,22 +4,24 @@
 // listen for clicks on the increment button 
 // increment the count variable when the button is clicked 
 // change the count-el to reflect the new count 
-
+let saveEl = document.getElementById("save-el")
 let countEl = document.getElementById("count-el")
 let count = 0
-
+console.log(saveEl)
 function increment(){
     // for testing ,, console.log(" clicked")
-    count = count + 1 
+    count += 1
    countEl.innerText = count 
     
 }
+ 
 
 function save() {
-    console.log(count)
-}
+    let entries = count + " - " 
+    saveEl.textContent += entries 
+    countEl.textContent = 0 
+    count = 0 
 
-let name = "iheb"
-let greeting = "hi,my name is"
-let MyGreeting = name + "" + greeting 
-console.log(MyGreeting)
+    
+}
+//i hate css
